@@ -10,5 +10,16 @@ module.exports = {
         throw new Error(error);
       }
     },
+    async getPost(_,{postId}){
+      try {
+        const existingPost = await Post.findById(postId);
+        if (existingPost) {
+          
+        }
+        
+      } catch (error) {
+        
+      }
+    }
   },
 };
